@@ -1,0 +1,41 @@
+@keyframes apearAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.form_container {
+  padding: 2rem;
+  width: 400px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+.form_container_header {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.8rem;
+  user-select: none;
+  cursor: default;
+
+  //icons
+  svg {
+    font-size: 3rem;
+  }
+}
+
+.form_container_error_message {
+  margin-bottom: 2rem;
+  height: 2rem;
+
+  span {
+    font-weight: bold;
+    border-bottom: 1px solid var(--red);
+    animation: 1s apearAnimation;
+  }
+}

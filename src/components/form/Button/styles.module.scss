@@ -1,0 +1,12 @@
+.button {
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  border: none;
+  background: var(--green);
+  color: var(--white);
+
+  //ações
+  &:hover {
+    outline: 2px solid var(--white);
+  }
+}
