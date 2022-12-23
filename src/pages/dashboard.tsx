@@ -7,7 +7,7 @@ const DashboardPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>User -</title>
+        <title>Authenticated User</title>
       </Head>
       <main>
         <Dashboard />

@@ -3,6 +3,12 @@
   width: 400px;
   margin: 2rem auto;
   padding: 0 2rem;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
 
 .user_container_header {
