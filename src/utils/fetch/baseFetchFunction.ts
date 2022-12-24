@@ -22,6 +22,10 @@ export default async function baseFetchFunction<T>(
   };
 
   url = baseUrl + url;
+  if (options && options.headers) {
+    options.headers = Object.assign(baseOptions.headers, options.headers);
+  }
+
   options = Object.assign(baseOptions, options);
   //repassando a requisição
   return await fetchFunction<T>(url, options);

@@ -102,13 +102,14 @@ export const AuthProvider = ({ children }: AuthProviderPropsType) => {
   useEffect(() => {
     //desestruturando em busca de cookies
     const token = getCookies("authJWT.token");
+
     //função que se auto chama
     (async () => {
       if (token) {
         //buscando user já autenticando
         const response = await authenticatedFetchFunction<userType>(
           "/me",
-          getCookies("authJWT.token")
+          token
         );
 
         //testes com a utilização de HighOrderFunctions
